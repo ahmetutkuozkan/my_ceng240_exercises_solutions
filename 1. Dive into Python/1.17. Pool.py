@@ -1,0 +1,7 @@
+faucet1 = int(input()); faucet2 = int(input()); faucet3 = int(input()); faucet4 = int(input()); faucet5 = int(input())
+faucet4_depth = int(input()); faucet5_depth = int(input())
+pool_length = int(input()); pool_width = int(input()); pool_depth = int(input())
+time1 = ((pool_depth-faucet4_depth)*pool_width*pool_length)/(faucet1+faucet2+faucet3)
+time2 = ((faucet4_depth-faucet5_depth)*pool_width*pool_length)/(faucet1+faucet2+faucet3-faucet4)
+time3 = (faucet5_depth*pool_width*pool_length)/(faucet1+faucet2+faucet3-faucet4-faucet5)
+print("Time to fill the pool is %.1f mins" % (time1+time2+time3))
